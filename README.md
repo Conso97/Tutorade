@@ -1,7 +1,7 @@
 # Tutorade
 Finding a Tutor is so Refreshing!!
 
-[Tutorade!](https://github.com/Conso97/Tutorade) - deployed version
+[Tutorade!](https://conso97.github.io/Tutorade/) - deployed version
 
 ## About
 
@@ -61,7 +61,7 @@ SO THAT I can offer sustainable tutoring support
 4. create a pull request for our review
 
 ## From developers
-Made by [Consolata](https://github.com/Conso97), [Michelle](https://github.com/michellecoder), [Manuhuia](https://github.com/ManuhuiaBarcham), [Mohamed](https://github.com/MohamedMesahel) and [Mariia](https://github.com/MaryVPie).
+Made by [Consolata](https://github.com/Conso97), [Michelle](https://github.com/michellecoder), [Manuhuia](https://github.com/ManuhuiaBarcham), [Mohamed](https://github.com/MohamedMesahel) and [:crab:Mariia](https://github.com/MaryVPie).
 We're always happy to receive your feedback!
 
 ## More from us
