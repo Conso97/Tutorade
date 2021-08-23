@@ -8,7 +8,7 @@ const loginFormHandler = async (event) => {
 
   if (email && password) {
     // Send a POST request to the API endpoint
-    const response = await fetch('/api/users/login', {
+    const response = await fetch('/api/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
@@ -37,7 +37,7 @@ const signupFormHandler = async (event) => {
   const languageLanguageId = document.querySelector('#language-signup').value;
 
   if (name && email && password) {
-    const response = await fetch('/api/users', {
+    const response = await fetch('/api/auth/signup', {
       method: 'POST',
       body: JSON.stringify({ name, email, password, languageLanguageId }),
       headers: { 'Content-Type': 'application/json' },
