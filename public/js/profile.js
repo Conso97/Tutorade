@@ -1,47 +1,61 @@
-const newFormHandler = async (event) => {
+
+const updateProfile = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#project-name').value.trim();
-  const needed_funding = document.querySelector('#project-funding').value.trim();
-  const description = document.querySelector('#project-desc').value.trim();
-
-  if (name && needed_funding && description) {
-    const response = await fetch(`/api/projects`, {
+  const languageElem = document.querySelector('#language-select');
+  const languageId = languageElem.value;
+  if (languageElem != null) {
+    const response = await fetch(`/api/users/updateLang`, {
       method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
+      body: JSON.stringify({ languageId }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      alert('Language Saved successfully');
     } else {
       alert('Failed to create project');
     }
   }
 };
 
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
+const getStudentsGrid = async () => {
+  const response = await fetch(`/api/users/students`, {
+    method: 'GET',
+    body: null,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 
-    const response = await fetch(`/api/projects/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete project');
-    }
+  if (response.ok) {
+    return await response.json();
+  } else {
+    let message = 'Failed to fetch the students. Try again later';
+    alert(message);
+    return message;
   }
 };
 
-document
-  .querySelector('.new-project-form')
-  .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('.project-list')
-  .addEventListener('click', delButtonHandler);
+  .querySelector('.language-form')
+  .addEventListener('submit', updateProfile);
+
+getStudentsGrid().then((sData) => {
+  console.log(sData);
+  new gridjs.Grid({
+    columns: [
+      'Name',
+      {
+        name: 'Email',
+        formatter: (_, row) => {
+         return gridjs.html(`<a href='mailto:${_}'>${_}</a>`);
+        }
+    } 
+  ],
+  data: sData
+  }).render(document.getElementById('students-table'));
+});
