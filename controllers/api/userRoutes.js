@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// api methow which iscreating a new user when he signes up
+// api method which is creating a new user when he signs up
 router.post('/', async (req, res) => {
   try {
     let entityToSave = Object.assign({}, req.body);
@@ -55,13 +55,13 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// logout hte user
+// logout the user
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
+    console.log("I passed the log in check!");
     req.session.destroy(() => {
       res.status(204).end();
-      req.session.logged_in = false;
-      req.session.user_id = null;
+      console.log("I'm inside destroy");
     });
   } else {
     res.status(404).end();
@@ -92,7 +92,7 @@ router.post('/updateLang', async (req, res) => {
   }
 });
 
-// Gettin the students for us.
+// Getting the students for us.
 
 router.get('/students', async (req, res) => {
   try {

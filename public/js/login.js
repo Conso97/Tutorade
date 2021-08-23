@@ -1,3 +1,4 @@
+const redirectRoute = '/search-students';
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -15,7 +16,7 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      document.location.replace(redirectRoute);
     } else {
       let responseJson = await response.json();
       console.log(responseJson);
@@ -30,7 +31,6 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
@@ -44,7 +44,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace(redirectRoute);
     } else { 
       alert(response.statusText);
     }
