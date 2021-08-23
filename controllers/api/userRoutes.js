@@ -2,9 +2,13 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
-  console.log(req.body);
   try {
-    const userData = await User.create(req.body);
+    let entityToSave = Object.assign({}, req.body);
+
+    if (entityToSave.languageLanguageId == "") {
+      entityToSave.languageLanguageId = null;
+    }
+    const userData = await User.create(entityToSave);
 
     req.session.save(() => {
       req.session.user_id = userData.id;
