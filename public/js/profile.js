@@ -54,8 +54,10 @@ getStudentsGrid().then((sData) => {
         formatter: (_, row) => {
          return gridjs.html(`<a href='mailto:${_}'>${_}</a>`);
         }
-    } 
-  ],
-  data: sData
+      } 
+    ],
+    search: true,
+    sort: true,
+    data: sData
   }).render(document.getElementById('students-table'));
 });
