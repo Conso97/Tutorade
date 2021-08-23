@@ -5,15 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tutorade</title>
-  <link rel="stylesheet" href="/css/jass.css">
+  {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
+    <header class="">
       <h1>
         <a href="/">Tutorade</a>
       </h1>
@@ -28,7 +27,7 @@
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
+    <main class="container">
       <!-- Render the sub layout -->
       {{{ body }}}
       
@@ -36,7 +35,6 @@
     <footer>
       
     </footer>
-  </div>
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
