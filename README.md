@@ -2,12 +2,14 @@
 Finding a Tutor is so Refreshing!!
 
 ---
-[Tutorade! - deployed version 🚀](https://conso97.github.io/Tutorade/) 
+[Tutorade! - HEROKU deployed version 🚀](https://new-tutor.herokuapp.com/login) 
 
 [Github repo <img src="public/img/octo.png" width="" height="30" alt="github icon"/>](https://github.com/Conso97/Tutorade) 
 
 ---
+
 [TOC] 
+
 ## About 
 A service that allows the user to sign in as a tutor. Providing the option to choose a programming language they are knowledgeable on and search for students, sending email to them.
 
@@ -31,11 +33,11 @@ SO THAT I can offer sustainable tutoring support
 
 ## Screenshots of the page
 
-| <img src="public/img/mobile.PNG" width="250" height="300" alt="Mobile view main page"/>| <img src="public/img/mobile2.PNG" width="250" height="300" alt="Mobile view students-table page"/> |
+| <img src="assets/mobile.PNG" width="250" height="300" alt="Mobile view main page"/>| <img src="assets/mobile2.PNG" width="250" height="300" alt="Mobile view students-table page"/> |
 | --- | --- |
 | Mobile view 1  | Mobile view 2 |
 
-| <img src="public/img/PC.PNG" width="500" height="300" alt="Laptop view main page"/>| <img src="public/img/PC.PNG" width="500" height="300" alt="Laptop view students-table page"/> |
+| <img src="assets/PC.PNG" width="500" height="300" alt="Laptop view main page"/>| <img src="assets/PC2.PNG" width="500" height="300" alt="Laptop view students-table page"/> |
 | --- | --- |
 | Laptop view 1  | Laptop view 2 |
 ## What's included
