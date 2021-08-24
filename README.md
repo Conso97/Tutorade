@@ -1,11 +1,16 @@
 # Tutorade
 Finding a Tutor is so Refreshing!!
 
-[Tutorade! - deployed version](https://conso97.github.io/Tutorade/) 🐱‍🏍🚀
-   
-[TOC]
+---
+[Tutorade! - deployed version 🚀](https://conso97.github.io/Tutorade/) 
+
+[Github repo <img src="public/img/octo.png" width="" height="30" alt="github icon"/>](https://github.com/Conso97/Tutorade) 
+
+---
+[TOC] 
 ## About 
-This app helps students and tutors connect with each other.
+A service that allows the user to sign in as a tutor. Providing the option to choose a programming language they are knowledgeable on and search for students, sending email to them.
+
 
 ## User Story
 
@@ -24,19 +29,22 @@ SO THAT I can offer sustainable tutoring support
 3. push your branch with ```git push -u origin <your_branch_name>``` 
 4. create a pull request for our review
 
-## Screenshots and mockups of the page
+## Screenshots of the page
 
-| <img src="assets/images/pixels.jpg" width="450" height="300" alt="Appear soon"/>| <img src="assets/images/mock.jpeg" width="250" height="450" alt="Mockup"/> |
+| <img src="public/img/mobile.PNG" width="250" height="300" alt="Mobile view main page"/>| <img src="public/img/mobile2.PNG" width="250" height="300" alt="Mobile view students-table page"/> |
 | --- | --- |
-|  Work done | Mockup |
+| Mobile view 1  | Mobile view 2 |
 
+| <img src="public/img/PC.PNG" width="500" height="300" alt="Laptop view main page"/>| <img src="public/img/PC.PNG" width="500" height="300" alt="Laptop view students-table page"/> |
+| --- | --- |
+| Laptop view 1  | Laptop view 2 |
 ## What's included
 
 - MySQL
 - Sequelize
 - Handlebars
 - Bootstrap Framework
-- Build in HTML5 functionality for validation
+- Build in HTML5 validation
 - Node.js
 - Bcrypt
 - Grid.js
@@ -59,5 +67,3 @@ We're always happy to receive your feedback!
 ## More from us
 To be updated with new projects.
 
-## License 
-This project is licensed under MIT
