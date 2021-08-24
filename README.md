@@ -1,24 +1,27 @@
 # Tutorade
 Finding a Tutor is so Refreshing!!
 
-# Team-Profile-Generator
-![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+---
+[Tutorade! - deployed version 🚀](https://conso97.github.io/Tutorade/) 
 
-## Description 
-This app helps students and tutors connect with each other.
+[Github repo <img src="public/img/octo.png" width="" height="30" alt="github icon"/>](https://github.com/Conso97/Tutorade) 
 
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [UserStroy](#UsersStory)
-* [License](#license)
-* [Tests](#tests)
-* [Questions](#questions)
+---
+[TOC] 
+## About 
+A service that allows the user to sign in as a tutor. Providing the option to choose a programming language they are knowledgeable on and search for students, sending email to them.
 
+
+## User Story
+
+```
+AS A tutor
+I WANT to post a programming language I am knowledgeable in and find a student who wants to learn the language
+SO THAT I can offer sustainable tutoring support
+```
 ## Installation 
 - Download it through Github
 - Run npm i or (npm install), to make sure to download the jason package and inquirer.
-- Also this app is using "jest" module for testing.
 
 ## Usage 
 1. use ```git clone ``` to clone repo sources
@@ -26,47 +29,26 @@ This app helps students and tutors connect with each other.
 3. push your branch with ```git push -u origin <your_branch_name>``` 
 4. create a pull request for our review
 
-## Screenshots and mockups of the page
+## Screenshots of the page
 
-| <img src="assets/images/pixels.jpg" width="450" height="300" alt="Appear soon"/>| <img src="assets/images/mock.jpeg" width="250" height="450" alt="Mockup"/> |
+| <img src="public/img/mobile.PNG" width="250" height="300" alt="Mobile view main page"/>| <img src="public/img/mobile2.PNG" width="250" height="300" alt="Mobile view students-table page"/> |
 | --- | --- |
-|  Work done | Mockup |
+| Mobile view 1  | Mobile view 2 |
 
-## Tests
-Run `npm test` to run Jest for tests on constructors. 
-[Tutorade!](https://github.com/Conso97/Tutorade) - deployed version
-## Users Stories
-
-```
-AS A student
-I WANT to search through computing languages and find an available tutor to get support 
-SO THAT I can find a tutor for me
-```
-
-```
-AS A tutor
-I WANT to to post languages I am supporting and to be able to add my tutoring time
-SO THAT I can offer sustainable tutoring support
-```
-
+| <img src="public/img/PC.PNG" width="500" height="300" alt="Laptop view main page"/>| <img src="public/img/PC.PNG" width="500" height="300" alt="Laptop view students-table page"/> |
+| --- | --- |
+| Laptop view 1  | Laptop view 2 |
 ## What's included
 
-- index.html:
- - optimized for the accessibility needs
+- MySQL
+- Sequelize
+- Handlebars
+- Bootstrap Framework
+- Build in HTML5 validation
+- Node.js
+- Bcrypt
+- Grid.js
 
-- styles.css
-  - optimized styles
-  - comments about how they are styling respective elements groups
-  
-- script.js:
-  - working with objects
-  - optimized code using functions
-
-- Technologies/Frameworks/Resources:
-  - JQuery
-  - server-side APIs
-  - materializecss
-  - google fonts
   
 ## How can I contribute or help?
 - Star our GitHub repo :star:
@@ -85,5 +67,3 @@ We're always happy to receive your feedback!
 ## More from us
 To be updated with new projects.
 
-## License 
-This project is licensed under MIT
