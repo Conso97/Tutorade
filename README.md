@@ -1,24 +1,22 @@
 # Tutorade
 Finding a Tutor is so Refreshing!!
 
-# Team-Profile-Generator
-![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
-
-## Description 
+[Tutorade! - deployed version](https://conso97.github.io/Tutorade/) 🐱‍🏍🚀
+   
+[TOC]
+## About 
 This app helps students and tutors connect with each other.
 
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [UserStroy](#UsersStory)
-* [License](#license)
-* [Tests](#tests)
-* [Questions](#questions)
+## User Story
 
+```
+AS A tutor
+I WANT to post a programming language I am knowledgeable in and find a student who wants to learn the language
+SO THAT I can offer sustainable tutoring support
+```
 ## Installation 
 - Download it through Github
 - Run npm i or (npm install), to make sure to download the jason package and inquirer.
-- Also this app is using "jest" module for testing.
 
 ## Usage 
 1. use ```git clone ``` to clone repo sources
@@ -32,41 +30,17 @@ This app helps students and tutors connect with each other.
 | --- | --- |
 |  Work done | Mockup |
 
-## Tests
-Run `npm test` to run Jest for tests on constructors. 
-[Tutorade!](https://github.com/Conso97/Tutorade) - deployed version
-## Users Stories
-
-```
-AS A student
-I WANT to search through computing languages and find an available tutor to get support 
-SO THAT I can find a tutor for me
-```
-
-```
-AS A tutor
-I WANT to to post languages I am supporting and to be able to add my tutoring time
-SO THAT I can offer sustainable tutoring support
-```
-
 ## What's included
 
-- index.html:
- - optimized for the accessibility needs
+- MySQL
+- Sequelize
+- Handlebars
+- Bootstrap Framework
+- Build in HTML5 functionality for validation
+- Node.js
+- Bcrypt
+- Grid.js
 
-- styles.css
-  - optimized styles
-  - comments about how they are styling respective elements groups
-  
-- script.js:
-  - working with objects
-  - optimized code using functions
-
-- Technologies/Frameworks/Resources:
-  - JQuery
-  - server-side APIs
-  - materializecss
-  - google fonts
   
 ## How can I contribute or help?
 - Star our GitHub repo :star:
